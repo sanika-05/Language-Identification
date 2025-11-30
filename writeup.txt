@@ -1,0 +1,19 @@
+﻿Text preprocessing
+1. Converted text to lowercase.
+2. Removed emojis and special characters , which were present in sentences like        ♪ dije, le dije: Dije, vamos ♪
+3. Replaced text within angular brackets(<>) with space, this removed  HTML tags.
+4. Replaced text within square brackets ([]) with space, did not remove square brackets at the start of the sentence. This helped in removing citations.
+5. Removed URLs, 'https' and 'www.'.
+6. Removed numbers, hyphens and punctuations.
+7. Replaced space with underscore for using char analyser.
+
+
+Used CountVectorizer with analyser = 'char' , ngram_range = (5,6)
+Model used Multinomial Naive Bayes with alpha = 0.00001
+
+
+I have not discussed the assignment with anyone.
+
+
+I have taken a few ideas from the following report.
+24.pdf (stanford.edu)
